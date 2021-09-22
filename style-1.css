@@ -9,6 +9,7 @@ body {
   h1 {
     font-style: oblique;
     font-family: Luminari;
+    color: rgb(214, 248, 248);
   }
   pre {
     font-style: oblique;
@@ -39,7 +40,16 @@ body {
   li {
     font-style: oblique;
     font-family: Smell Roundhand;
+    list-style-type: none;
     color: #fff;
+    text-decoration: none;
+  }
+  li :hover {
+    font-style: oblique;
+    font-family: Smell Roundhand;
+    list-style-type: none;
+    color: rgb(215, 242, 248);
+    text-decoration: none;
   }
   .b1 {
     font-style: oblique;
@@ -47,4 +57,17 @@ body {
     background: black;
 
     color: white;
+  }
+
+  title {
+    font-style: oblique;
+    font-family: Smell Roundhand;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    border: 3px solid #dbf2fa
   }
