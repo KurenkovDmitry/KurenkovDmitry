@@ -1,19 +1,78 @@
 body { 
-    background: #c7b39b url(ldJbofQQhKg.jpg)no-repeat;
+    background: #c7b39b url(ldJbofQQhKg.jpg);
     -moz-background-size: 100%;
     -webkit-background-size: 100%;
     -o-background-size: 100%;
-    background-size: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     color: #fff
+
+  }
+  .product_img {
+    border: solid;
+    border-color: #cacd58 #5faf8a #b9cea5 #aab238;
+    float: left;
+    font-size: 300 300;
+  }
+  .product_img:hover {
+    border: none;
+    margin: 3px;
   }
   h1 {
     font-style: oblique;
     font-family: Luminari;
     color: rgb(214, 248, 248);
   }
+  .product .shortdescription {
+    font-size: 14px;
+    line-height: 16px;
+    color: #707070;
+    font-style: italic;
+    text-align: center;
+  }
+  .buy input[type="submit"] {
+    width: 150px;
+    height: 60px;
+    border: 1px solid transparent;
+    background-color: #7fc7ff;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffff00;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none;
+    margin: 150px 0 0 285px;
+  }
+  .buy input[type="submit"]:hover {
+    background-color: #0bda51;
+    color: black;
+  }
+  .buy input[type="submit"]:active {
+    background-color: #66ff00;
+  }
   pre {
     font-style: oblique;
     font-family: Smell Roundhand;
+  }
+  .buy input[type="submit"] {
+    width: 150px;
+    height: 60px;
+    border: 1px solid transparent;
+    background-color: #7fc7ff;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffff00;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none;
+    margin: 150px 0 0 285px;
+  }
+  .buy input[type="submit"]:hover {
+    background-color: #0bda51;
+    color: black;
+  }
+  .buy input[type="submit"]:active {
+    background-color: #66ff00;
   }
   p {
     font-style: oblique;
@@ -70,4 +129,14 @@ body {
 
   img {
     border: 3px solid #dbf2fa
+  }
+
+  footer {
+    height: 50px;
+    background: #e2c78d;
+  }
+
+  .container_catalog {
+    display: flex;
+    justify-content: space-between;
   }
