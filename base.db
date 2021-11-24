@@ -1,0 +1,49 @@
+CREATE TABLE tovar (
+	id_tov INTEGER PRIMARY Key
+	ecseplar TEXT NOT NULL UNIQUE
+)
+
+CREATE TABLE postavka (
+	id_postavka INTEGER PRIMARY Key
+	id_postavshik INTEGER NOT NULL
+	id_tov INTEGER NOT NULL
+	kolvo INTEGER NOT NULL
+	stoimost_tov INTEGER NOT NULL
+	obs_stoimost INTEGER NOT NULL
+	id_manager INTEGER NOT NULL
+	FOREIGN KEY (id_tov) REFERENCES tovar(id_tov)
+	FOREIGN KEY (id_postavshik) REFERENCES postavsic(id_postavshik)
+	FOREIGN KEY (id_manager) REFERENCES manager(id_manager)
+)
+
+CREATE TABLE prodovec (
+	id_prodovec INTEGER PRIMARY Key
+	name TEXT NOT NULL UNIQUE
+	familia TEXT NOT NULL UNIQUE
+	otchestvo TEXT NOT NULL UNIQUE
+	telefon INTEGER NOT NULL
+)
+
+CREATE TABLE prodasa_tovara (
+	id_check INTEGER PRIMARY Key
+	id_prodovec INTEGER NOT NULL
+	id_tov INTEGER NOT NULL
+	kolvo INTEGER NOT NULL
+	stoimost_tov INTEGER NOT NULL
+	doxod INTEGER NOT NULL
+	FOREIGN KEY (id_tov) REFERENCES tovar(id_tov)
+	FOREIGN KEY (id_prodovec) REFERENCES prodovec(id_prodovec)
+)
+
+CREATE TABLE manager (
+	id_manager INTEGER PRIMARY Key
+	name TEXT NOT NULL UNIQUE
+	familia TEXT NOT NULL UNIQUE
+	otchestvo TEXT NOT NULL UNIQUE
+	telefon INTEGER NOT NULL
+)
+
+CREATE TABLE postavsic (
+	id_postavshik INTEGER PRIMARY Key
+	firm TEXT NOT NULL UNIQUE
+)
