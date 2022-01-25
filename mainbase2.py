@@ -26,8 +26,9 @@ class Products(db.Model):
 
 
 class Price_change(db.Model):
+    i = db.Column(db.Integer, primary_key=True, autoincrement=True, nullable=True)
     id = db.Column(db.Integer, db.ForeignKey('products.id'), nullable=True)
-    date_price_change = db.Column(db.Integer, nullable=True)
+    date_price_change = db.Column(db.Float, nullable=True)
     new_price = db.Column(db.Integer, nullable=True)
     
 
@@ -38,6 +39,7 @@ class Stores(db.Model):
     
 
 class Deliveries(db.Model):
+    i = db.Column(db.Integer, primary_key=True, autoincrement=True, nullable=True)
     product_id = db.Column(db.Integer, db.ForeignKey('products.id'), nullable=True)
     store_id = db.Column(db.Integer, db.ForeignKey('stores.id'), nullable=True)
     delivery_date = db.Column(db.Integer, nullable=True)
@@ -59,10 +61,11 @@ class Pocupki(db.Model):
 
 
 class Pocupki_items(db.Model):
+    i = db.Column(db.Integer, primary_key=True, autoincrement=True, nullable=True)
     pocupki_id = db.Column(db.Integer, db.ForeignKey('pocupki.id'), nullable=True)
     product_id = db.Column(db.Integer, db.ForeignKey('products.id'), nullable=True)
     product_count = db.Column(db.Integer, nullable=True)
-    product_price = db.Column(db.Real, nullable=True)
+    product_price = db.Column(db.Float, nullable=True)
     
 
 
