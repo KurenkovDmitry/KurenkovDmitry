@@ -28,7 +28,7 @@ class Products(db.Model):
 class Price_change(db.Model):
     id = db.Column(db.Integer, db.ForeignKey('products.id'), nullable=True)
     date_price_change = db.Column(db.Integer, nullable=True)
-    new_price = db.Column(db.Real, nullable=True)
+    new_price = db.Column(db.Integer, nullable=True)
     
 
 class Stores(db.Model):
