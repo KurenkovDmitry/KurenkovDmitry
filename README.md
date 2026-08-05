@@ -56,7 +56,7 @@ Marketplace developed by a four-person team during the VK Education web-developm
 
 **Role:** Full-Stack Developer with frontend focus  
 **Focus:** adaptive UI, TypeScript frontend, Go backend integration, Figma design and Nginx configuration  
-**Repositories:** [Frontend](https://github.com/frontendparkmail-ru/2024_2_kotyari) · [Backend](https://github.com/go-park-mail-ru/2024_2_kotyari)
+**Repositories:** [Frontend](https://github.com/frontend-park-mail-ru/2024_2_kotyari) · [Backend](https://github.com/go-park-mail-ru/2024_2_kotyari)
 
 ## Expertise
 
