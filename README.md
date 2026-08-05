@@ -90,10 +90,39 @@ Marketplace developed by a four-person team during the VK Education web-developm
 
 <div align="center">
 
-![Profile details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=KurenkovDmitry&theme=github_dark)
+  <img
+    width="100%"
+    src="./profile-summary-card-output/github_dark/0-profile-details.svg"
+    alt="GitHub profile details"
+  />
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=KurenkovDmitry&show_icons=true&hide_border=true&theme=github_dark&rank_icon=github" alt="GitHub statistics" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KurenkovDmitry&layout=compact&hide_border=true&theme=github_dark&langs_count=8" alt="Most used languages" />
+  <br />
+
+  <img
+    width="49%"
+    src="./profile-summary-card-output/github_dark/1-repos-per-language.svg"
+    alt="Repositories per language"
+  />
+  <img
+    width="49%"
+    src="./profile-summary-card-output/github_dark/2-most-commit-language.svg"
+    alt="Most committed languages"
+  />
+
+  <br />
+
+  <img
+    width="49%"
+    src="./profile-summary-card-output/github_dark/3-stats.svg"
+    alt="GitHub statistics"
+  />
+  <img
+    width="49%"
+    src="./profile-summary-card-output/github_dark/4-productive-time.svg"
+    alt="Productive time"
+  />
+
+  <br />
 
 ![Activity graph](https://github-readme-activity-graph.vercel.app/graph?username=KurenkovDmitry&theme=github-compact&hide_border=true&area=true)
 
